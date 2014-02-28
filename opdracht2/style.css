@@ -64,5 +64,59 @@ h2
 é
 /* animaties */
 
+#header
+{
+	-webkit-animation: flipInX 0.5s;
+	-webkit-animation-fill-mode: forwards; 
+	-webkit-transform-origin: center center;
+}
+
+#gebruikers
+{
+	-webkit-animation: flipInY 2.5s;
+	-webkit-animation-fill-mode: forwards; 
+	-webkit-transform-origin: left bottom;	
+}
+
+h1,
+h2
+{
+	margin-left: -300px;
+	-webkit-animation: floatIn 1.5s;
+	-webkit-animation-fill-mode: forwards; 
+	-webkit-transform-origin: left bottom;	
+}
+
+#gebruikers img:hover
+{
+	-webkit-animation: scale 0.5s;	
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes scale
+{
+100%  {-webkit-transform: scale(1.1)}
+}
+
+@-webkit-keyframes flipInY
+{
+0%  {-webkit-transform: rotateY(90deg)}
+40%  {-webkit-transform: rotateY(-10deg)}
+70%  {-webkit-transform: rotateY(10deg)}
+100%  {-webkit-transform: rotateY(0deg)}
+}
+
+@-webkit-keyframes flipInX
+{
+0%  {-webkit-transform: rotateX(90deg)}
+40%  {-webkit-transform: rotateX(-10deg)}
+70%  {-webkit-transform: rotateX(10deg)}
+100%  {-webkit-transform: rotateX(0deg)}
+}
+
+@-webkit-keyframes floatIn
+{
+100%  {-webkit-transform: translateX(300px)}
+}
 
 
